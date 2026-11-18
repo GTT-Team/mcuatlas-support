@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — MCU Atlas</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <img src="assets/icon-256.png" alt="" width="40" height="40">
+    <div>
+      <p class="brand-title">MCU Atlas</p>
+      <p class="brand-sub">Made by Will Baldwin Designs</p>
+    </div>
+  </div>
+  <nav class="primary-nav" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="support.html">Support</a>
+    <a href="privacy.html" aria-current="page">Privacy</a>
+  </nav>
+</header>
+
+<main id="main">
+  <h1>Privacy</h1>
+  <p class="lede">This page explains what MCU Atlas does with information, in plain terms. It covers the app itself, catalog updates, contacting us, links the app opens, and this website.</p>
+
+  <h2>No ads, and no advertising or analytics SDKs</h2>
+  <p>MCU Atlas contains no advertising SDK, no third-party analytics SDK, and no tracking SDK of any kind. Nothing in the app is designed to identify you across other apps or websites. Websites you choose to open from the app, such as a provider, a store, YouTube or a discussion site, are run by other companies, and their own privacy practices apply there.</p>
+
+  <h2>App data: on your device and in your own private iCloud database</h2>
+  <p>Your watch history, spoiler preference, and other progress data are stored on your device. MCU Atlas also carries a built-in copy of its catalog and reference information, so browsing the catalog and marking what you have watched do not need an internet connection. Your progress data is not sent to any server operated by the developer, and Will Baldwin Designs does not have a general window into what you watch.</p>
+  <p>When your device is signed in to iCloud, MCU Atlas also keeps your progress in Apple's CloudKit private database, tied to your own Apple Account. That database belongs to your account; the developer cannot see its contents. If no iCloud account is available, the app is designed to keep your progress on the device only. This page does not promise that your progress will appear on every device you own.</p>
+  <p>To keep edits from different devices from colliding, each stored operation carries a per-device operation identifier. This identifier is generated and stored on the device itself; it is not derived from your Apple Account or any other account, and it is not shared with the developer or any third party outside your own private iCloud data.</p>
+  <p>This is not a claim of end-to-end encryption implemented by the app, an unconditional no-access guarantee, or a promise that no data is ever collected under any definition — it describes the private-database design as built. iCloud storage relies on Apple's own account, transport, and storage systems, which are Apple's to describe in their own terms.</p>
+
+  <h2>Catalog updates</h2>
+  <p>MCU Atlas can download a newer version of its public catalog (titles, episodes, release facts and similar reference information), so the catalog can be corrected or extended without an app update. On iPhone, iPad, Mac, Apple TV, Apple Vision Pro and Apple Watch, the app checks each time it opens, and again when it comes back to the foreground if about six hours have passed since its last check. You can also check yourself from About. The files come over HTTPS from a static host the developer runs on Cloudflare. A check asks only for those public files: it carries no watch history, progress, spoiler choice, notes or account identifier, and it is sent without cookies or saved credentials. As with any web request, the host receives your device's IP address and ordinary request details; Cloudflare handles these as the host, under Cloudflare's own privacy policy. A downloaded catalog is checked before it is used, is kept in the app's own storage on your device, and takes effect the next time the app opens. If a check fails, or you are offline, the catalog you already have and your progress stay as they are.</p>
+
+  <h2>If you contact us</h2>
+  <p>The "Report an Issue" button on our <a href="support.html">Support page</a> only opens a draft email in your own mail app, addressed to <a href="mailto:willbaldwindesigns@gmail.com">willbaldwindesigns@gmail.com</a> with a subject line filled in — nothing beyond what you choose to write goes into it.</p>
+  <p>The in-app "Report an Issue" control is different: it prepares a reviewable draft that includes the category and item you're reporting about (if any), the app version, the catalog snapshot date, a drafted timestamp, and the message you write. You can review it, then copy, share, or email it yourself, depending on your device: Apple TV shows the support address to write to from another device, and Apple Watch shows the address and can share the draft but cannot copy or compose email. Nothing is ever sent automatically, and your watch history is not silently attached — only the fields listed above are included, and only when you choose to send the draft. An unfinished draft is kept only in the app's memory while the app is open; it is not saved to storage or iCloud.</p>
+  <p>When you do send us an email, we receive whatever you send — your email address and the content of your message. You can email us to ask about your message or ask us to delete it; we handle these requests individually, since there is no account system to manage them automatically. We keep identifiable support correspondence for up to 12 months after our last exchange with you, then delete it; after that we keep only technical notes that do not identify you.</p>
+
+  <h2>Provider links, other links, Handoff, and Spotlight</h2>
+  <dl class="field-list">
+    <dt>Provider links ("Where to watch")</dt>
+    <dd>These open the streaming provider's or store's own app or website. The app uses your device's region setting, on the device, to choose which recorded destinations to list; it does not add that setting, or any progress, to the link. Opening a link never marks anything watched. Once you leave MCU Atlas, that provider's own privacy practices apply — we don't control or see what happens there.</dd>
+    <dt>Store and provider pages as a code (Apple TV)</dt>
+    <dd>On Apple TV, a checked store or provider web page that Apple TV cannot open itself, such as a Rent or Buy page, is shown as a code, made on the Apple TV, that you can scan with your phone's camera. The code holds only that page's public address. Nothing is opened, bought or sent from the Apple TV; if you scan it, your phone opens the page, and that site's own privacy practices apply.</dd>
+    <dt>Search YouTube (iPhone, iPad, Mac, Apple Vision Pro and Apple TV)</dt>
+    <dd>The last option in "Where to watch" searches YouTube for the title you are viewing: a film's title and year, or a show's name and episode code. Those search words go to YouTube, and YouTube's own privacy practices apply. Your watch history and progress are not included, and the app does not read the results. On iPhone and iPad the search opens in an in-app Safari view. On Mac and Apple Vision Pro it opens in a web view inside the app that does not save cookies or website data to your device; you can follow YouTube's own links within it. On Apple TV, it shows a code, made on the Apple TV, that you can scan with your phone's camera to open the same search on your phone; nothing is opened or sent from the Apple TV. Apple Watch has no YouTube search.</dd>
+    <dt>Source, reference and community links</dt>
+    <dd>On iPhone and iPad these open in an in-app Safari view; on Mac and Apple Vision Pro they open in your browser. The app does not fetch those pages itself or read them, and it does not add any progress to the link. They can contain spoilers, and once the page opens, that site's own privacy practices apply.</dd>
+    <dt>Image search (iPhone and iPad)</dt>
+    <dd>Some character and cast rows have a button that searches for pictures. When you tap it, MCU Atlas opens Google Images in an in-app Safari view, with Google's SafeSearch filter requested, using the names and title shown on that row as the search words. Those words go to Google, and Google's own privacy practices apply. Your watch history and progress are not included, and the app does not read the results.</dd>
+    <dt>Handoff</dt>
+    <dd>In the iPhone, iPad and Mac apps, if you have Handoff turned on, the title, route, or search text you're viewing can be picked up by your own other iPhone, iPad or Mac signed into the same Apple Account. MCU Atlas does not keep a record of this and does not send it anywhere else. The Apple Watch, Apple TV and Apple Vision Pro apps do not use Handoff.</dd>
+    <dt>Spotlight</dt>
+    <dd>In the iPhone, iPad and Mac apps, Spotlight indexing on your device includes public catalog titles and curated route names only — never your watch history, notes, or searches. The Apple Watch, Apple TV and Apple Vision Pro apps add nothing to Spotlight.</dd>
+  </dl>
+
+  <h2>This website</h2>
+  <p>This support and privacy site is hosted on GitHub Pages, GitHub's static-site hosting service. GitHub's own documentation states that when a GitHub Pages site is visited, the visitor's IP address is logged and stored for security purposes, regardless of whether the visitor has signed into GitHub or not. That logging is performed by GitHub as the host — it is separate from the MCU Atlas app and is not something we collect or receive. For GitHub's own description of how it handles that data, see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's Privacy Statement</a>. These pages themselves add no advertising, analytics, tracking scripts, or cookies of our own.</p>
+
+  <h2>Product limits relevant to your data</h2>
+  <ul class="plain-list">
+    <li>Progress tracking is manual; MCU Atlas does not import progress from any streaming provider's history.</li>
+    <li>Catalog updates are designed to preserve identities so your progress carries forward, but this is not an absolute guarantee in every case.</li>
+    <li>Progress is kept in your own private iCloud database when one is available, but MCU Atlas does not promise that it appears on every device you own.</li>
+    <li>MCU Atlas does not use Live Activities.</li>
+  </ul>
+
+  <h2>Questions</h2>
+  <p>Email us at <a href="mailto:willbaldwindesigns@gmail.com">willbaldwindesigns@gmail.com</a> to ask about this policy or about data associated with a message you've sent us.</p>
+</main>
+
+<footer class="site-footer">
+  <p>MCU Atlas is made by Will Baldwin Designs.</p>
+  <p>Contact: <a href="mailto:willbaldwindesigns@gmail.com">willbaldwindesigns@gmail.com</a> &middot; Community: u/MCUAtlasApp</p>
+  <p class="note">Not affiliated with, endorsed by, or sponsored by Marvel or The Walt Disney Company.</p>
+</footer>
+</body>
+</html>
